@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>How Browsers Work</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h2>Web Browser Evolution</h2>
+        </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="history.html">History</a>
+            <a href="technology.html">Technology</a>
+            <a href="concepts.html">Key Concepts</a>
+            <a href="references.html">References</a>
+            <a href="about.html">About</a>
+        </nav>
+        <main id="content">
+            <h1>How Browsers Work</h1>
+            <section>
+                <h2>Opening a website</h2>
+                <p>When you enter a URL, the browser has to find the website's server, make a connection, and request the files it needs. Most websites use several files, including HTML, CSS, JavaScript, images, and fonts.</p>
+                <ol>
+                    <li><strong>Find the server:</strong> DNS helps match the domain name with an IP address.</li>
+                    <li><strong>Connect:</strong>HTTPS uses TLS to protect information sent between the browser and the site.</li>
+                    <li><strong>Request files:</strong>The browser downloads the website's HTML and other resources.</li>
+                    <li><strong>Build the page:</strong>HTML and CSS are processed while JavaScript can add behavior.</li>
+                    <li><strong>Display and interact:</strong>The browser draws the page and responds to clicks, typing, and scrolling.</li>
+                </ol>
+            </section>
+            <section>
+                <h2>Rendering a webpage</h2>
+                <p>The browser processes HTML into a document structure called the DOM. It also processes CSS styling. From there, it works out the layout, paints the visual pieces, and combines everything into what you see on the screen.</p>
+            </section>
+            <section>
+                <h2>Comparing browser engines</h2>
+                <p>A rendering engine decides how website content gets displayed. Different browsers may share the same engine, which is one reason some browsers behave similarly.</p>
+                <div>
+                    <table>
+                        <caption> Examples of browsers and their rendering engines</caption>
+                        <thead><tr><th scope="col">Browser</th><th scope="col">Rendering engine</th><th scope="col">Known for</th></tr></thead>
+                        <tbody>
+                            <tr><td>Chrome</td><td>Blink</td><td>Extensions and Google integration</td></tr>
+                            <tr><td>Edge</td><td>Blink</td><td>Windows and Microsoft services</td></tr>
+                            <tr><td>Safari</td><td>WebKit</td><td>Apple device integration</td></tr>
+                            <tr><td>Firefox</td><td>Gecko</td><td>Independant engine and customization</td></tr>
+                            <tr><td>Opera</td><td>Blink</td><td>Built-in browser features</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>Technical background: <a href="https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/How_browsers_work">MDN: How browsers work</a> and <a href="https://www.chromium.org/blink/">Chromium: Blink</a>.</p>
+            </section>
+        </main>
+        <footer>IT 3203 class project by Josiah Weber - <a href="https://ksuweb.github.io/IT3203/">Course website</a></footer>
+    </body>
+</html>
