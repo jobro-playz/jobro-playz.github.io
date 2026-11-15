@@ -2,14 +2,15 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>How Browsers Work</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
-            <h2>Web Browser Evolution</h2>
+            <p class="site-title">Web Browser Evolution</p>
         </header>
+        <!-- Navigation links to each website page -->
         <nav>
             <a href="index.html">Home</a>
             <a href="history.html">History</a>
@@ -18,11 +19,13 @@
             <a href="references.html">References</a>
             <a href="about.html">About</a>
         </nav>
+        <!-- Main content for this page -->
         <main id="content">
             <h1>How Browsers Work</h1>
             <section>
                 <h2>Opening a website</h2>
                 <p>When you enter a URL, the browser has to find the website's server, make a connection, and request the files it needs. Most websites use several files, including HTML, CSS, JavaScript, images, and fonts.</p>
+                <!-- List showing the process of browser communication -->
                 <ol>
                     <li><strong>Find the server:</strong> DNS helps match the domain name with an IP address.</li>
                     <li><strong>Connect:</strong>HTTPS uses TLS to protect information sent between the browser and the site.</li>
@@ -39,6 +42,7 @@
                 <h2>Comparing browser engines</h2>
                 <p>A rendering engine decides how website content gets displayed. Different browsers may share the same engine, which is one reason some browsers behave similarly.</p>
                 <div>
+                    <!-- Table comparing different browsers and their engines -->
                     <table>
                         <caption> Examples of browsers and their rendering engines</caption>
                         <thead><tr><th scope="col">Browser</th><th scope="col">Rendering engine</th><th scope="col">Known for</th></tr></thead>
@@ -54,6 +58,7 @@
                 <p>Technical background: <a href="https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/How_browsers_work">MDN: How browsers work</a> and <a href="https://www.chromium.org/blink/">Chromium: Blink</a>.</p>
             </section>
         </main>
+        <!-- Footer with course information -->
         <footer>IT 3203 class project by Josiah Weber - <a href="https://ksuweb.github.io/IT3203/">Course website</a></footer>
     </body>
 </html>
