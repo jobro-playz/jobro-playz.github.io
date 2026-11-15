@@ -6,7 +6,7 @@ const answerKey = [
     { name: 'q1', type: 'text', correct: ['hypertext markup language','hyper text markup language'], display: 'HyperText Markup Language' },
     { name: 'q2', type: 'text', correct: ['cascading style sheets', 'cascading stylesheets'], display: 'Cascading Style Sheets' },
     { name: 'q3', type: 'radio', correct: 'Google', display: 'Google' },
-    { name: 'q4', type: 'radio', correct: 'Data sent between your browser and a wesite', display: 'Data sent between your browser and a wesite' },
+    { name: 'q4', type: 'radio', correct: 'Data sent between your browser and a website', display: 'Data sent between your browser and a website' },
     { name: 'q5', type: 'radio', correct: 'Displays web page content', display: 'Displays web page content' },
     { name: 'q6', type: 'checkbox', correct: ['HTML', 'CSS', 'JavaScript'], display: "HTML, CSS, and JavaScript" },
     { name: 'q7', type: 'radio', correct: 'Making pages interactive', display: 'Making pages interactive' },
