@@ -1,0 +1,89 @@
+
+/*Styles for the quiz page*/
+.quiz-status {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 14px;
+    margin: 18px 0;
+    border: 1px solid #b6c9d9;
+    border-radius: 6px;
+    background: #e5ecf2;
+}
+.quiz-question {
+    margin: 18px 0;
+    padding: 16px;
+    border: 1px solid #c9c9c9;
+    border-radius: 6px;
+    background: white;
+}
+.quiz-question legend {
+    padding: 0 6px;
+    font-weight: bold;
+}
+.quiz-question label {
+    display: block;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+.quiz-question input[type="text"] {
+    display: block;
+    box-sizing: border-box;
+    width: min(100%, 430px);
+    margin-top: 8px;
+    padding: 10px;
+    font: inherit;
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+.quiz-question input[type="radio"],
+.quiz-question input[type="checkbox"] {
+    margin-right: 8px;
+    accent-color: #24486b;
+}
+.quiz-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 24px 0;
+}
+.quiz-buttons button {
+    padding: 11px 18px;
+    font: inherit;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #24486b;
+}
+#submit-btn {
+    background: #24486b;
+    color: white;
+}
+#reset-btn {
+    color: #24486b;
+    background: white;
+}
+.quiz-buttons button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.quiz-results {
+    margin: 24px 0;
+    padding: 18px;
+    border: 1px solid #b6c9d9;
+    border-radius: 6px;
+    background: #f0f5f9;
+}
+/*Hiding results until the quiz is finished*/
+.quiz-results[hidden] { display: none; }
+.result-pass { color: #187333; font-size: 1.3rem; font-weight: bold; }
+.result-fail { color: #a12626; font-size: 1.3rem; font-weight: bold; }
+#answer-feedback { padding-left: 25px; }
+#answer-feedback li { margin: 15px 0; padding: 10px; border-radius: 4px; }
+#answer-feedback p { margin: 5px 0; }
+.answer-correct { background: #e2f4e7; border-left: 4px solid #187333; }
+.answer-incorrect { background: #fbe6e6; border-left: 4px solid #a12626; }
+@media (max-width: 550px) {
+    .quiz-question { padding: 12px; }
+    .quiz-status { flex-direction: column; }
+}
